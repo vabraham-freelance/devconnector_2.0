@@ -13,6 +13,7 @@
     "react-scripts": "3.0.0",
     "redux": "^4.0.1",
     "redux-devtools-extension": "^2.13.8",
+    "redux-persist": "^6.0.0",
     "redux-thunk": "^2.3.0",
     "uuid": "^3.3.2"
   },
@@ -20,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier:write": "prettier 'src/**/*.{js,jsx}' --write",
+    "prettier:check": "prettier 'src/**/*.{js,jsx}' --check"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,5 +40,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5000"
+  "proxy": "http://localhost:5000",
+  "devDependencies": {
+    "prettier": "1.19.1"
+  }
 }

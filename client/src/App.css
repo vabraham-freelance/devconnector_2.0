@@ -474,6 +474,10 @@ button {
   width: 100px;
 }
 
+.post input[type="file"] {
+  display: none;
+}
+
 .post .comment-count {
   background: var(--light-color);
   color: var(--primary-color);

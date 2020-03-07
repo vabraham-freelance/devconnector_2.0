@@ -80,6 +80,8 @@ export const login = (email, password) => async dispatch => {
       payload: res.data
     });
 
+    setAuthToken(res.data.token);
+
     dispatch(loadUser());
   } catch (err) {
     const errors = err.response.data.errors;
